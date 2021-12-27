@@ -36,3 +36,150 @@
     transform: rotate(360deg);
   }
 }
+                                                  /*            Login Page CSS                 */
+
+#login-large{
+  background-color: #EEF0F6;
+  height: 80vh;
+}
+#login-footer{
+  background-color: white;
+  height: 20px;
+}
+#login-logo-image{
+
+ margin: 100px;
+}
+#login-form{
+  margin-right: 200px;
+  margin-left: 100px;
+  margin-top: 160px;
+  padding:30px;
+}
+#login-password{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#submit{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+                                          /*            Feed Page CSS                 */
+
+
+#home-logo{
+  height: 45px;
+  padding: 0;
+  margin: 0;
+}
+#home-logo-text{
+    width: 130px;
+}
+#home-header-logoAndImage{
+  margin-left:0 ;
+  padding-left:0 ;
+}
+                                        /*Logos- Home, Profiles, Forum, Profile , Logout*/
+#home-home-logo{
+  height: 35px;
+  margin-left: 130px;
+  margin-right:120px;
+
+}
+#home-human-logo{
+  height: 35px;
+  margin-right: 120px;
+}
+#home-forum-logo{
+  height: 35px;
+
+}
+#home-profile-img{
+  height: 35px;
+  margin-left: 120px;
+
+}
+
+#home-logout-logo{
+  height: 35px;
+  margin-left: 100px;
+  margin-right: 0;
+}
+
+                                            /* Header : Logos Ends Here.........*/
+
+
+                                            /*Main Section Component Starts Here*/
+#main-section{
+  background-color: #F0F2F6;
+  height: 100%;
+}
+
+                                            /*Left Component Starts Here*/
+
+#trending-list{
+  margin-top: 10px;
+}
+#trending-logo{
+  padding-right: 10px;
+}
+
+
+
+                                            /*Middle Component Starts Here*/
+
+
+#likeButton{
+
+  padding-left: 120px;
+  padding-right: 120px;
+  alignment: left;
+
+}
+#commentButton{
+  padding-left: 120px;
+  padding-right: 120px;
+  alignment: right;
+}
+#likeCount{
+  padding-right: 20px;
+}
+
+                                            /*Right Component Starts Here*/
+
+                                                          /*Profile CSS*/
+
+
+#id-group{
+  padding: 10px;
+}
+
+
+
+
+                                      /*Custom Classes*/
+
+.hover-blue:hover {
+  background-color: #3872DE;
+}
+.hover-red:hover{
+  background-color: #EB573A;
+}
+.hover-white:hover{
+  background-color: white;
+}
+.hover-lightgray:hover{
+  background-color: #EEF0F6 ;
+}
+.trendingListItem{
+ background-color: #EEF0F6;
+
+}
+*{
+  font-family:sans-serif ;
+}
+
+.p-10{
+  padding: 10px;
+}

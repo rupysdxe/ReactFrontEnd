@@ -1,24 +1,46 @@
-import logo from './logo.svg';
 import './App.css';
 
+
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import HeaderComponent from "./components/HeaderComponent";
+import LeftComponent from "./components/LeftComponent";
+import RightComponent from "./components/RightComponent";
+import Feeds from "./components/Feeds";
+import ListComponent from "./components/ListComponent";
+import Forum from "./components/forum";
+import Login from "./components/Login";
+import Profile from "./components/Profile";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+ <div className="container-fluid">
+
+            <Router>
+
+                            <div className="row">
+                                <HeaderComponent/>
+                             </div>
+
+                                <div  className="row" id="main-section">
+                                    <div className="col-md-3">
+                                        <LeftComponent/>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <Routes>
+                                            <Route path="/" element={ <Feeds/>}  > </Route>
+                                            <Route path="/list" element={ <ListComponent/>}  > </Route>
+                                            <Route path="/forum" element={ <Forum/>}  > </Route>
+                                            <Route path="/profile" element={ <Profile/>}  > </Route>
+                                        </Routes>
+                                    </div>
+                                    <div className="col-md-3">
+                                        <RightComponent/>
+                                    </div>
+
+                                </div>
+
+            </Router>
+
+ </div>
   );
 }
 
